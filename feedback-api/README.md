@@ -6,7 +6,7 @@
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
 
-# NestJS Items API
+# NestJS API
 
 This project is a simple REST API built with NestJS, providing basic CRUD operations for managing items. It includes service-oriented architecture, CORS configuration, and rate limiting.
 
