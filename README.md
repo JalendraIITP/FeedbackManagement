@@ -1,4 +1,4 @@
-# Next Word Predictor
+# Simple Feedback Management System
 
 ## Getting Started
 
@@ -7,16 +7,13 @@
    First, clone the repository to your local machine using Git.
 
    ```sh
-   git clone https://github.com/JalendraIITP/Next-Word-Predictor
+   git clone https://github.com/JalendraIITP/FeedbackManagement
    cd repo
 2. **Start Backend Server:**
    ```sh
-   cd dev
-   set FLASK_APP=flaskServer.py
-   $env:FLASK_APP = "flaskServer.py"
-   flask run
+   cd feedback-api
+   npm run dev
 3. **Start Frontend Reactjs:**
    ```sh
-   cd dev
+   cd feedback-client
    npm start
-![Project Screenshot](https://github.com/JalendraIITP/Next-Word-Predictor/blob/master/Next_Word_Predictor.jpg)
