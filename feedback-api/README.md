@@ -22,52 +22,20 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# NestJS Items API
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This project is a simple REST API built with NestJS, providing basic CRUD operations for managing items. It includes service-oriented architecture, CORS configuration, and rate limiting.
 
-## Installation
+## API Overview
 
-```bash
-$ npm install
-```
+The API created can be summarized with the following points:
 
-## Running the app
+1. **Service-Oriented Architecture**: The application uses a service-oriented architecture to manage the business logic. The `ItemsService` class encapsulates the logic for managing items.
 
-```bash
-# development
-$ npm run start
+2. **CRUD Operations**:
+   - **Create**: The `create(item: Item)` method allows adding new items.
+   - **Read**: The `findAll()` and `findOne(id: number)` methods allow retrieving all items or a specific item by its ID.
 
-# watch mode
-$ npm run start:dev
+3. **CORS Configuration**: The application is configured to allow cross-origin requests from any origin, supporting common HTTP methods (`GET`, `POST`, `PUT`, `DELETE`) and headers (`Content-Type`, `Authorization`).
 
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+4. **Rate Limiting**: Though not fully implemented in the provided code, the use of the `express-rate-limit` package indicates an intention to protect the API from abuse by limiting the number of requests a client can make within a certain time frame.
